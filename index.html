@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deuploads</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Deuploads</h1>
+        <!-- Section for linking social media accounts -->
+        <div class="link-accounts">
+            <h2>Link Your Accounts</h2>
+            <button id="linkYoutube" class="link-button">Link YouTube</button>
+            <button id="linkFacebook" class="link-button">Link Facebook</button>
+            <button id="linkInstagram" class="link-button">Link Instagram</button>
+            <button id="linkReddit" class="link-button">Link Reddit</button>
+            <button id="linkThreads" class="link-button">Link Threads</button>
+        </div>
+
+        <!-- Form for content upload -->
+        <form id="postForm">
+            <input type="text" id="title" placeholder="Enter title" required>
+            <textarea id="description" placeholder="Enter description" required></textarea>
+            <input type="text" id="hashtags" placeholder="Enter hashtags">
+            <input type="datetime-local" id="scheduleTime" required>
+
+            <label for="media">Upload Media:</label>
+            <input type="file" id="media" name="media" accept="image/*,video/*" multiple required>
+
+            <button type="button" onclick="generateContent()">Upload Content</button>
+            <button type="submit">Schedule Post</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

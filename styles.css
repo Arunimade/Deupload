@@ -1,0 +1,131 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+textarea,
+input[type="datetime-local"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+/* Upload and Schedule button styles */
+button[type="button"] {
+    background-color: #007bff;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* File input label styling */
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #4a4a4a;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+/* Existing CSS goes here */
+
+/* Link Accounts Section */
+.link-accounts {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.link-accounts h2 {
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.link-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #666;
+}
